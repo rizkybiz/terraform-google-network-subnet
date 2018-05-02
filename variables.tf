@@ -1,6 +1,12 @@
 variable "name" {
   type        = "string"
-  description = "Subnet name to create on GCP"
+  description = "Subnet name to create in GCP"
+}
+
+variable "description" {
+  type        = "string"
+  description = "Description of subnet to create in GCP"
+  default     = "a subnet"
 }
 
 variable "vpc" {
